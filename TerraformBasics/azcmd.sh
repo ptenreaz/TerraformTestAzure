@@ -2,15 +2,15 @@
 az login
 
 # if you have multiple subscriptions then select the one you want to use
-az account set -s "MPN - John Lunn"
+az account set -s "Azure Pipos"
 
 
 
-$env:RESOURCE_GROUP_NAME = 'jonnychipz-state'
-$env:STORAGE_ACCOUNT_NAME = 'jonnychipztfstate'
+$env:RESOURCE_GROUP_NAME = 'pipos-state'
+$env:STORAGE_ACCOUNT_NAME = 'pipostfstate'
 $env:CONTAINER_NAME = 'tstate'
 # Create resource group
-az group create --name $env:RESOURCE_GROUP_NAME --location uksouth
+az group create --name $env:RESOURCE_GROUP_NAME --location francecentral
 # Create storage account
 az storage account create --resource-group $env:RESOURCE_GROUP_NAME --name $env:STORAGE_ACCOUNT_NAME --sku Standard_LRS --encryption-services blob
 # Get storage account key
