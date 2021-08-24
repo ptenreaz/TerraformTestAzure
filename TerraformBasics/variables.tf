@@ -1,7 +1,7 @@
 variable "primary_location" {
   type = string
   description = "Primary Location"
-  default = "UK South"
+  default = "francecentral"
 }
 
 variable "secondary_location" {
@@ -13,7 +13,7 @@ variable "secondary_location" {
 variable "location_map" {
   type = map
   default = {
-    "pri"  = "UK South"
+    "pri"  = "francecentral"
     "sec" = "UK West"
   }
 }
@@ -25,5 +25,5 @@ variable "set_password" {
 
 variable "location_list" {
   type = list
-  default = ["UK South", "UK West", "North Europe"] 
+  default = ["francecentral", "UK West", "North Europe"] 
 }
